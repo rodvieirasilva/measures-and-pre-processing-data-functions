@@ -1,0 +1,52 @@
+measures_and_pre_processing_data(TaskMeasuresProcessing.Average, 3, 1, 0)
+measures_and_pre_processing_data(TaskMeasuresProcessing.Median, 3, 1, 0)
+measures_and_pre_processing_data(TaskMeasuresProcessing.AverageTruncate, 3, 1, 25)
+measures_and_pre_processing_data(TaskMeasuresProcessing.AverageTruncate, 8, 1, 25)
+measures_and_pre_processing_data(TaskMeasuresProcessing.Average, 1, 2, 0)
+measures_and_pre_processing_data(TaskMeasuresProcessing.Median, 1, 2, 0)
+measures_and_pre_processing_data(TaskMeasuresProcessing.AverageTruncate, 3, 1, 25)
+
+measures_and_pre_processing_data(TaskMeasuresProcessing.Quartile, 3, 1, 1)
+measures_and_pre_processing_data(TaskMeasuresProcessing.Quartile, 3, 1, 2)
+measures_and_pre_processing_data(TaskMeasuresProcessing.Quartile, 3, 1, 3)
+measures_and_pre_processing_data(TaskMeasuresProcessing.Percentile, 3, 1, 40)
+
+measures_and_pre_processing_data(TaskMeasuresProcessing.Quartile, 8, 1, 1)
+measures_and_pre_processing_data(TaskMeasuresProcessing.Quartile, 8, 1, 2)
+measures_and_pre_processing_data(TaskMeasuresProcessing.Quartile, 8, 1, 3)
+measures_and_pre_processing_data(TaskMeasuresProcessing.Percentile, 8, 1, 40)
+
+
+measures_and_pre_processing_data(TaskMeasuresProcessing.BoxPlot, 3, 1, 0)
+
+
+measures_and_pre_processing_data(TaskMeasuresProcessing.Interval, 3, 1, 0)
+measures_and_pre_processing_data(TaskMeasuresProcessing.Interval, 8, 1, 0)
+
+measures_and_pre_processing_data(TaskMeasuresProcessing.StandardDeviation, 3, 1, 0)
+measures_and_pre_processing_data(TaskMeasuresProcessing.StandardDeviation, 8, 1, 0)
+
+measures_and_pre_processing_data(TaskMeasuresProcessing.StandardDeviationAbsolute, 3, 1, 0)
+measures_and_pre_processing_data(TaskMeasuresProcessing.StandardDeviationMedianAbsolute, 3, 1, 0)
+measures_and_pre_processing_data(TaskMeasuresProcessing.IntervalInterQuartile, 3, 1, 3, 1)
+
+
+measures_and_pre_processing_data(TaskMeasuresProcessing.StandardDeviationAbsolute, 8, 1, 0)
+measures_and_pre_processing_data(TaskMeasuresProcessing.StandardDeviationMedianAbsolute, 8, 1, 0)
+measures_and_pre_processing_data(TaskMeasuresProcessing.IntervalInterQuartile, 8, 1, 3, 1)
+
+
+measures_and_pre_processing_data(TaskMeasuresProcessing.Histogram, 3, 1, 0)
+
+measures_and_pre_processing_data(TaskMeasuresProcessing.Pie, 6, 1, 0)
+
+
+measures_and_pre_processing_data(TaskMeasuresProcessing.Covariance, 6, 1, 0)
+measures_and_pre_processing_data(TaskMeasuresProcessing.Correlation, 6, 1, 0)
+
+measures_and_pre_processing_data(TaskMeasuresProcessing.NormalizeMinMax, 3, 1, 0, 1)
+measures_and_pre_processing_data(TaskMeasuresProcessing.NormalizeMinMax, 8, 1, 0, 1)
+
+measures_and_pre_processing_data(TaskMeasuresProcessing.NormalizeStandardization, 3, 1, 0)
+measures_and_pre_processing_data(TaskMeasuresProcessing.NormalizeStandardization, 8, 1, 0)
+
