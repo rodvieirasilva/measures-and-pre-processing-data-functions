@@ -9,5 +9,5 @@ function result = measures_and_pre_processing_data_standard_dev_median_abs(data)
     for idx = 1 : size
         other(idx) = abs (data(idx) - median);
     end
-    result = measures_and_pre_processing_data_median(other)
+    result = measures_and_pre_processing_data_median(other);
 end

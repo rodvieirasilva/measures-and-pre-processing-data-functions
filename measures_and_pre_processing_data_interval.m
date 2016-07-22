@@ -2,7 +2,7 @@
 function result = measures_and_pre_processing_data_interval(data)
 %UNTITLED6 Summary of this function goes here
 %   Detailed explanation goes here
-result = max(data) - min(data)
+result = max(data) - min(data);
 
 end
 

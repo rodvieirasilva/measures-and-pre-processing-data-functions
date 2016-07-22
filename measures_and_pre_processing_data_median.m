@@ -9,10 +9,10 @@ qtd = numel(data);
 center = qtd/2;
 if mod(qtd,2) == 0 
     %corrigindo problemas de indice
-    indexMedian = [center, center + 1]
-    median = (data(indexMedian(1)) + data(indexMedian(2))) / 2
+    indexMedian = [center, center + 1];
+    median = (data(indexMedian(1)) + data(indexMedian(2))) / 2;
 else    
-    indexMedian = ((qtd - 1)/2) + 1
-    median = data(indexMedian)
+    indexMedian = ((qtd - 1)/2) + 1;
+    median = data(indexMedian);
 end
 

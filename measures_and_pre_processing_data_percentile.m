@@ -8,12 +8,12 @@ m = numel(data);
 k = m * (percent/100);
 
 if mod(k,1) == 0
-   indexPercentile = [k , k  + 1]
-   percentile = (data(indexPercentile(1)) + data(indexPercentile(2))) / 2
+   indexPercentile = [k , k  + 1];
+   percentile = (data(indexPercentile(1)) + data(indexPercentile(2))) / 2;
 else
    k = int64(ceil(k)); 
-   indexPercentile = k
-   percentile = data(indexPercentile)
+   indexPercentile = k;
+   percentile = data(indexPercentile);
 end
     
 end

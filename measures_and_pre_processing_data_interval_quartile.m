@@ -6,6 +6,6 @@ function result = measures_and_pre_processing_data_interval_quartile(data, x, y)
 
 [quartileY, index] = measures_and_pre_processing_data_quartile(data, y);
 
-result = quartileX - quartileY
+result = quartileX - quartileY;
 
 end

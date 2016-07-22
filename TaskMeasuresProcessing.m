@@ -1,34 +1,34 @@
 classdef TaskMeasuresProcessing
    enumeration
-        %Estatística Descritiva 
-        %Frequência
-        %Proporção de vezes que um
+        %Estatistica Descritiva 
+        %Frequencia
+        %Proporcao de vezes que um
         %atributo assume um dado valor
-        %Aplicável a valores numéricos e simbólicos
-      Frequency, %    
+        %Aplicavel a valores numericos e simbolicos
+      Frequency, % teste   
       %univariados
       %Dados univariados: medidas de localidade
-      %Valores numéricos
-      Average, %Médias%
-      AverageTruncate, %Média truncada%
+      %Valores numericos
+      Average, %Medias%
+      AverageTruncate, %Media truncada%
       Median , %MEdiana%
       Percentile, %Percentil%
       Quartile, %Quartil%
-      %Valores Simbólicos
+      %Valores Simbolicos
       Mode, %Moda%
-      BoxPlot,  %
+      BoxPlot,  %teste
       Histogram,
       Pie,
       %Dados univariados: medidas de espalhamento
-      Interval, %intervalo,  Mostra espalhamento máximo entre valores%
-      Variance, %Variância%
-      StandardDeviation, %Desvio padrão%
-      StandardDeviationAbsolute, %Desvio médio absoluto%
+      Interval, %intervalo,  Mostra espalhamento maximo entre valores%
+      Variance, %Variancia%
+      StandardDeviation, %Desvio padrao%
+      StandardDeviationAbsolute, %Desvio medio absoluto%
       StandardDeviationMedianAbsolute, %Desvio mediano absoluto%
       IntervalInterQuartile, %Intervalo interquartil%
       %Dados multivariados
-      Covariance%,    
-      Correlation%,
+      Covariance,    
+      Correlation,
       NormalizeMinMax,
       NormalizeStandardization
    end

@@ -2,9 +2,9 @@
 function f = measures_and_pre_processing_data(task, collumn, file, parameter1, parameter2)
 
 if file == 2
-    data = read_mixed_csv('data2.dat', ' ');
+    data = read_mixed_csv('data2.dat', ',');
 else
-    data = read_mixed_csv('data.dat', ' ');
+    data = read_mixed_csv('test.csv', ' ');
 end
 
 sizeX = size(data);
@@ -14,39 +14,39 @@ switch task
     case TaskMeasuresProcessing.Frequency
      f = measures_and_pre_processing_data_frequency(dataCollumn);
     case TaskMeasuresProcessing.Average     
-     f = measures_and_pre_processing_data_average(data2number(dataCollumn));
+     f = measures_and_pre_processing_data_average(dataNumber);
     case TaskMeasuresProcessing.Median        
-     f = measures_and_pre_processing_data_median(data2number(dataCollumn));
+     f = measures_and_pre_processing_data_median(dataNumber);
     case TaskMeasuresProcessing.AverageTruncate
-     f = measures_and_pre_processing_data_average_truncate(data2number(dataCollumn), parameter1);
+     f = measures_and_pre_processing_data_average_truncate(dataNumber, parameter1);
     case TaskMeasuresProcessing.Percentile
-     f = measures_and_pre_processing_data_percentile(data2number(dataCollumn), parameter1);
+     f = measures_and_pre_processing_data_percentile(dataNumber, parameter1);
     case TaskMeasuresProcessing.Quartile        
-     f = measures_and_pre_processing_data_quartile(data2number(dataCollumn), parameter1);
+     f = measures_and_pre_processing_data_quartile(dataNumber, parameter1);
     case TaskMeasuresProcessing.Interval
-     f = measures_and_pre_processing_data_interval(data2number(dataCollumn));
+     f = measures_and_pre_processing_data_interval(dataNumber);
 
     case TaskMeasuresProcessing.Mode
      f = measures_and_pre_processing_data_mode(dataCollumn);
 
     case TaskMeasuresProcessing.BoxPlot
-     measures_and_pre_processing_data_boxplot(data2number(dataCollumn));
+     measures_and_pre_processing_data_boxplot(dataNumber);
     case TaskMeasuresProcessing.Histogram
-     measures_and_pre_processing_data_histogram(data2number(dataCollumn));
+     measures_and_pre_processing_data_histogram(dataNumber);
     case TaskMeasuresProcessing.Pie
-     measures_and_pre_processing_data_pie(data2number(dataCollumn));   
+     measures_and_pre_processing_data_pie(dataNumber);   
     case TaskMeasuresProcessing.Variance
      f = measures_and_pre_processing_data_variance(dataCollumn);
     case TaskMeasuresProcessing.StandardDeviation     
-     f = measures_and_pre_processing_data_standard_deviation(data2number(dataCollumn));
+     f = measures_and_pre_processing_data_standard_deviation(dataNumber);
     case TaskMeasuresProcessing.StandardDeviationAbsolute        
-     f = measures_and_pre_processing_data_standard_deviation_absolute(data2number(dataCollumn));
+     f = measures_and_pre_processing_data_standard_deviation_absolute(dataNumber);
     
     case TaskMeasuresProcessing.StandardDeviationMedianAbsolute
-     f = measures_and_pre_processing_data_standard_dev_median_abs(data2number(dataCollumn));
+     f = measures_and_pre_processing_data_standard_dev_median_abs(dataNumber);
     
     case TaskMeasuresProcessing.IntervalInterQuartile
-     f = measures_and_pre_processing_data_interval_quartile(data2number(dataCollumn), parameter1, parameter2);
+     f = measures_and_pre_processing_data_interval_quartile(dataNumber, parameter1, parameter2);
     
     case TaskMeasuresProcessing.Covariance
      covariance = zeros(sizeX);
@@ -74,9 +74,9 @@ switch task
      end
      f = correlation
     case TaskMeasuresProcessing.NormalizeMinMax    
-     f = measures_and_pre_processing_data_norm_min_max(data2number(dataCollumn), parameter1, parameter2);
+     f = measures_and_pre_processing_data_norm_min_max(dataNumber, parameter1, parameter2);
    case TaskMeasuresProcessing.NormalizeStandardization    
-     f = measures_and_pre_processing_data_norm_standardization(data2number(dataCollumn));
+     f = measures_and_pre_processing_data_norm_standardization(dataNumber);
 
 end
 

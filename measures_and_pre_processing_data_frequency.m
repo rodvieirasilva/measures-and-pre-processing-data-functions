@@ -11,7 +11,7 @@ for idx = 1 : numel(data)
         dataIdx = char(data(idx));        
     end
     
-    dataIdx = char(data(idx));
+    dataIdx = num2str(data(idx));
     if isKey(mapObj, dataIdx)
         mapObj(dataIdx) = mapObj(dataIdx) + 1;
     else
@@ -19,10 +19,10 @@ for idx = 1 : numel(data)
     end
     qtd = qtd + 1;
     if mapObj(dataIdx) > maxFrequency 
-        maxFrequency = mapObj(dataIdx)
-        maxFrequencyItem = dataIdx
+        maxFrequency = mapObj(dataIdx);
+        maxFrequencyItem = str2num(dataIdx);
          
     end
 end
-maxFrequencyRelative = maxFrequency /qtd
-maxFrequencyPercent = maxFrequencyRelative* 100
+maxFrequencyRelative = maxFrequency /qtd;
+maxFrequencyPercent = maxFrequencyRelative* 100;
